@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --color-labai-50: oklch(0.95 0.02 230);
+  --color-labai-100: oklch(0.9 0.04 230);
+  --color-labai-200: oklch(0.82 0.08 230);
+  --color-labai-300: oklch(0.72 0.18 230);
+  --color-labai-400: oklch(0.65 0.18 230);
+  --color-labai-500: oklch(0.55 0.18 230);
+  --color-labai-600: oklch(0.45 0.16 230);
+  --color-labai-700: oklch(0.35 0.12 250);
+  --color-labai-800: oklch(0.2 0.045 250);
+  --color-labai-900: oklch(0.14 0.045 250);
+  --color-labai-950: oklch(0.09 0.035 250);
+}
+
+.dark {
+  --ui-bg: oklch(0.09 0.035 250);
+  --ui-bg-elevated: oklch(0.14 0.045 250);
+  --ui-bg-accented: oklch(0.2 0.045 250);
+  --ui-border: oklch(0.3 0.05 250);
+  --ui-text: oklch(0.98 0.01 240);
+  --ui-text-muted: oklch(0.7 0.03 240);
+}
+
+.ai-glow {
+  box-shadow:
+    0 0 20px oklch(0.75 0.18 230 / 30%),
+    0 0 60px oklch(0.78 0.15 200 / 15%);
+}
+
+.ai-grid {
+  background-image:
+    linear-gradient(oklch(0.75 0.18 230 / 8%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.75 0.18 230 / 8%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
